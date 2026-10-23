@@ -1,14 +1,42 @@
+
 body{
     margin: 0;
     left: 0;
     font-family: sans-serif;
+    background-color:  hsl(0 0% 80%);
+color: hsl(181.76, 15.04%, 15.31%);
+}
+article-home {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+code-snippet{
+    background-color: hsl(0 0% 20%);
+    color: white;
+    overflow: hidden;
+    padding: 1rem;
+    font-weight: bold;
+    display: flex;
 }
 header{
     display: grid;
     grid-template-columns: 1fr 1fr;
-    background-color: hsl(0 0% 10%);
+    background-color: hsl(181.76, 15.04%, 30.31%);
     padding: 1rem;
     gap: 1rem;
+}
+header a{
+    display: flex;align-items: center;
+    justify-content: center;
+}
+header p{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: hsl(0 0% 90%);
 }
 header div{
     display: flex;
@@ -35,7 +63,7 @@ footer{
     justify-content: center;
     flex-direction: row;
     gap: 1rem;
-    background-color: hsl(0 0% 10%);
+    background-color: hsl(181.76, 15.04%, 30.31%);
     color: hsl(0 0% 80%);
 }
 footer a{
@@ -47,9 +75,16 @@ list-articles{
     display: flex;
     align-items: center;
     justify-content: center;
-    flex-direction: column;
-    background-color: #FFF07C;
+    flex-direction: column;;
 
+}
+list-articles button{
+    padding: 1rem;
+    background-color: hsl(181.76, 15.04%, 10.31%);
+    color: white;
+    border: none;
+    font-size: 1.2rem;
+    font-weight: bold;
 }
 
 .bbh-bogle-regular {
@@ -72,7 +107,7 @@ list-articles div{
 }
 article-display a{
     text-decoration: none;
-    color: black;
+    color:hsl(181.76, 15.04%, 15.31%);
 }
 article-display a h1:hover{
     text-decoration: underline;
@@ -84,7 +119,7 @@ articles-tags{
 
 }
 articles-tags a{
-    color: hsl(0 0% 90%);
+    color: #4B3B47;
     padding: 0.5rem;
     font-weight: bold;
     background-color: black;
@@ -105,25 +140,17 @@ articles-detail-down{
     padding: 1rem;
 }
 skills{
-    display: flex;
-    flex-direction: column;
-    padding: 1rem;
-    gap: 4px;
-}
-skills-sub{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
+    padding: 1rem;
     gap: 1rem;
 }
-
-skills-sub button{
-    background-color: black;
-    color: hsl(0 0% 80%);
-    font-weight: bold;
-    border: none;
-}
-skills-sub button:hover{
+skill-down{
+    display: grid;
+    justify-content: center;
     background-color: hsl(0 0% 10%);
+    color: white;
+
 }
 about h1{
     display: flex;
@@ -178,73 +205,70 @@ about{
         display: flex;
         flex-direction: column;
     }
-    skills{
-        display: flex;
-        flex-direction: column;
-    }
 }
 header-options{
     display: grid;
     grid-template-columns: 1fr 1fr;
 }
-hero-outer{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
 hero{
-    height: 100vh;
-    flex-direction: column;
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-direction: column;
 }
-hero h1{
+hero-right{
     display: flex;
-    font-size: 8rem;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    max-width: 800px;
+    height: 90vh;
+    gap: 1rem;
 }
-hero p{
-    display: flex;
+hero-right button{
+    padding: 1rem;
+    background-color: hsl(181.76, 15.04%, 10.31%);
+    color: white;
+    border: none;
+    font-size: 1.2rem;
+    font-weight: bold;
+
+}
+hero-right h1{
     font-size: 3rem;
 }
-hero button{
-    background-color: black;
-    border: none;
-    color: hsl(0 0% 95%);
-    font-weight: bold;
-    width: 300px;
-    height: 100px;
+
+hero p{
+      font-size: 2rem;
 }
 
-skills{
-    display: flex;
-
-    flex-direction: row;
-    gap: 1rem;
+list-projects{
     align-items: center;
     justify-content: center;
-
-
+    display: grid;
+    grid-template-columns: 1fr 1fr;
 }
-skills-sub h2 {
+project-display{
     display: flex;
     justify-content: center;
-    align-items: center;
-    color: hsl(0 0% 100%);
 }
-skills-sub p{
-    color: hsl(0 0% 80%);
-}
-skills-sub a{
-    color: hsl(0 0% 90%);
-
-}
-skills-sub{
-    height: 30vh;
+projects-home{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background-color: hsl(181.76, 15.04%, 15.31%);
     padding: 1rem;
-    background-color: hsl(0 0% 15%);
+}
+projects-front-display{
     display: flex;
-    flex-direction: column;
-    width: 300px;
     justify-content: center;
+
+}
+
+projects-front-display a{
+    width: 400px;
+    text-decoration: none;
+    color: hsl(0 0% 90%);
+}
+projects-front-display img{
+    width: 400px;
 }
